@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="https://img001.prntscr.com/file/img001/mompNAAaT8uf4iT7WBNdFw.png" />
+  <title>Yapı Sepeti | Türkiye'nin En Büyük Online Yapı Marketi</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+</head>
+<body>
+  <style type="text/css">
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+  * {
+    font-family: 'Poppins', sans-serif;
+  }
+</style>
+<div class="bg-white flex flex-col h-screen items-center justify-center gap-y-4 select-none">
+  <div class="flex flex-col h-fit justify-center items-center">
+    <div>
+      <img
+        style="width: 8rem"
+        src="https://img001.prntscr.com/file/img001/UQTGIWBTR1aPUN3tb1wNZA.gif" alt="Yapı Sepeti Ev"
+      />
+    </div>
+    <div>
+      <img
+        style="width: 25rem"
+        class="mt-3"
+        src="https://img001.prntscr.com/file/img001/bJCjcyrzSPqVZXRvPA4LLQ.gif" alt="Yapı Sepeti Logo"
+      />
+    </div>
+  </div>
+  <div class="font-black text-3xl" id="traffic_msg">Hiçbir aksilik yok, biraz yoğunluk var.</div>
+  <div class="font-medium text-center" id="time_msg">Az sonra yönlendirileceksiniz.<br/>Alışverişinize kaldığınız yerden <span class="font-bold" id="time">5</span> saniye içerisinde devam edebilirsiniz.</div>
+  <div class="pt-10">
+    DDoS Koruma ve Optimizasyon by <span class="font-bold hover:cursor-pointer"><a href="https://www.yapisepeti.com.tr" target="_blank">Yapı Sepeti</a></span>
+  </div>
+</div>
+<span style="display: none !important; width: 0px !important; height: 0px !important">::IM_UNDER_ATTACK_BOX::</span>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="text/javascript">
+  $(document).ready(() => {
+    let time = 5
+    let timer = setInterval(() => {
+      if(time > 1) {
+        time--
+        $("#time").html(time)
+      } else {
+        $("#time_msg").html("Yönlendiriliyorsunuz..")
+        clearInterval(timer)
+      }
+    }, 1000)
+  })
+</script>
+
+</body>
+</html>
